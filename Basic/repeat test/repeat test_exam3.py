@@ -9,7 +9,7 @@ b =[]
 total = 0
 
 for i in range(0,len(a)):
-    if int(a[i]) >100:
+    if int(a[i]) >100 or int(a[i]) < 0:
         break
     else:
         b.append(int(a[i]))
@@ -19,4 +19,4 @@ for i in range(0,len(b)):
     total = total + b[i]
 
 print('sum :', total)
-print('total :', round(total/len(b),1))
+print('avg :', round(total/len(b),1))
