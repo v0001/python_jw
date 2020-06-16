@@ -2,9 +2,13 @@
 
 # (넓이는 반올림하여 소수 첫째자리까지 출력한다.)​
 
-a = ''
-while(a.upper() == 'N'):
-    Base = input("Base =")
-    Height = input("Height =")
+a = 'Y'
+while(a.upper() == 'Y'):
+    b = input().strip().split()
+    Base = int(b[0])
+    Height = int(b[1])
+
+    print("Base = ", Base)
+    print("Height = ", Height)
     print("Triangle width =", Base*Height/2)
-    a= input("Continue? ")fk
+    a= input("Continue? ")
